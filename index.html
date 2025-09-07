@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Search</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        nav {
+            /* background-color: orange;    */
+            display: flex;
+            justify-content: right;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: springgreen;
+            width: 200px;
+            height: 40px;
+            border-radius: 50px;
+            margin: 10px;
+        }
+
+
+        #Logo {
+            /* background: purple; */
+            font-family: arial;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 20px;
+            font-size: 110px;
+        }
+
+
+        .blue {
+            color: #4285F4
+        }
+
+        .red {
+            color: #EA4335
+        }
+
+        #yellow {
+            color: #FBBC05
+        }
+
+        #green {
+            color: #34A853
+        }
+
+
+
+        form {
+            display: block;
+        }
+
+        .searchbox {
+            font-size: 20px;
+            display: flex;
+            border-radius: 50px;
+            height: 36px;
+            width: 50%;
+            border-width: 1px;
+            margin: auto;
+        }
+
+        #Submit {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 17.5%
+        }
+
+
+        a:link {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav"><a href="imagesearch.html">Google Image Search</a></div>
+
+        <div class="nav"><a href="advancedsearch.html">Google Advanced Search</a></div>
+
+    </nav>
+
+    <h1 id="Logo">
+        <span class="blue">G</span>
+        <span class="red">o</span>
+        <span id="yellow">o</span>
+        <span class="blue">g</span>
+        <span id="green">l</span>
+        <span class="red">e</span>
+    </h1>
+
+    <form action="https://google.com/search">
+
+        <input type="text" name="q" class="searchbox">
+
+        <div id="Submit">
+
+            <input type="submit" value="Google Search" class="Submit">
+
+            <input type="submit" role="button" name="btnI" value="I'm Feeling Lucky" class="Submit">
+
+        </div>
+
+    </form>
+
+
+</body>
+
+
+</html>

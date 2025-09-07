@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Search</title>
+    <style>
+        
+        /* General Page */
+        body {
+            font-family: arial;
+        }  
+        
+        .indent {
+            margin-left: 35px;
+        }
+
+        
+        #top {
+            background-color: orange;
+            display: flex;
+            justify-content: left;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: right;
+        }
+                
+        .navsearch {
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            background-color:springgreen;
+            width: 200px;
+            height: 40px;
+            border-radius: 50px;
+            margin: 10px;
+                }
+        /* Google Logo */
+
+        #Logo {
+             background: purple;
+             font-family: arial;
+             display: flex;
+             justify-content: left;
+             /* margin: auto; */
+             margin-bottom: 20px;
+             font-size: 25px;
+             margin-right: 50%;
+        }
+            
+            
+        .blue {
+            color: #4285F4
+        }
+        
+        .red {
+            color: #EA4335
+        }
+        
+        #yellow {
+            color: #FBBC05
+        }
+        
+        #green {
+            color: #34A853
+        }
+
+        /* Navigation Bar */
+        
+        /* Search Boxes */
+
+        .searchbox {
+            height: 25px;
+            width: 40%;
+            border-width: 1px;
+        }
+        
+        .advancedsearch {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        .searchdescription  {
+            width:175px;
+        }
+
+
+        .title {
+            margin-bottom: 2    0px;
+            font-size: 30px;
+            color: #d93025;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: black;
+            text-decoration: underline;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <div id="top">
+
+        <h1 id="Logo">
+            <span class="blue">G</span>
+            <span class="red">o</span>
+            <span id="yellow">o</span>
+            <span class="blue">g</span>
+            <span id="green">l</span>
+            <span class="red">e</span>
+        </h1>
+    
+        <nav>
+
+            <div class="navsearch"><a href="imagesearch.html">Google Image Search</a></div>
+            <div class="navsearch"><a href="index.html">Google Search</a></div>
+
+        </nav>
+
+    </div>
+    
+
+    <div class="title indent">
+
+        Advanced Search
+
+    </div>
+
+    <hr>
+
+    <h2 class="indent">
+
+        Find pages with...
+        
+    </h2>
+
+    <form action="https://google.com/search">
+
+        <div class="advancedsearch indent"> 
+
+            <span class="searchdescription">all of these words:</span>  <input type="text" name="as_q" class="searchbox">
+
+        </div>
+
+        
+        <div class="advancedsearch indent"> 
+
+            <span class="searchdescription">this exact word or phrase:</span>  <input type="text" name="as_epq" class="searchbox">
+
+        </div>
+
+        
+        <div class="advancedsearch indent"> 
+
+            <span class="searchdescription">any of these words:</span>  <input type="text" name="as_oq" class="searchbox">
+
+        </div>
+       
+       
+        <div class="advancedsearch indent"> 
+
+            <span class="searchdescription">none of these words:</span>  <input type="text" name="as_eq" class="searchbox">
+
+        </div>
+<br>
+<br>
+<br>
+<br>
+        <input type="submit" value="Advanced Google Search" class="indent">
+
+    </form>
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
